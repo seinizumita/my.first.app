@@ -37,6 +37,7 @@ const App = () =>{
                 placeholder="Search for Movie"
                 value={serachTerm}
                 onChange={(e) => setSerachTerm(e.target.value)}
+                onKeyUp={() => searchMovies(serachTerm)}
                 />
                 <img
                 src={SearchIcon}
